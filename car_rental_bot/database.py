@@ -1,7 +1,7 @@
 import sqlite3
 from config import DB_NAME
 
-# Створюємо або підключаємось до бази даних
+
 conn = sqlite3.connect(DB_NAME, check_same_thread=False)
 cursor = conn.cursor()
 
@@ -40,7 +40,7 @@ def initialize_db():
     ''')
     conn.commit()
 
-    # Заповнення таблиці продуктів прикладами, якщо вона порожня
+    # Заповнення таблиці автомобілів
     cursor.execute("SELECT COUNT(*) FROM products")
     count = cursor.fetchone()[0]
     if count == 0:
