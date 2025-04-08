@@ -1,0 +1,6 @@
+
+API_TOKEN = '7628337147:AAEBSJQFx8UfUaFuqqPXvx8d8nuZiTPVA9M'
+
+ADMIN_IDS = [813692116]
+
+DB_NAME = "car_db.sqlite"
